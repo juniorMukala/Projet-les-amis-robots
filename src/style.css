@@ -1,0 +1,33 @@
+* {
+    /* background-color: pink; */
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 250px;
+    height: 370px;
+    background-color: #9eebcf;
+    border-radius: 20px;
+    padding: 16px;
+    margin: 8px;
+    margin-bottom: 30px;
+    transition: all linear 0.2s;
+  }
+  #Card--Photo{
+      justify-content: center;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+  
+  

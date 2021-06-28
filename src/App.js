@@ -20,6 +20,7 @@ const App = () => {
           return {id,name,email,username,phone,city,company,website,street,address };
       })
       setRobots(answer)
+      setLoading(false)
       })
       .catch(e=>{
         setLoading(false)

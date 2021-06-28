@@ -26,6 +26,7 @@ const App = () => {
         console.log("Une erreur est survenue");
       })
   }, []);
+  if (loading) return <h1>Chargement ...</h1>
   return (
     <div>
       <h1>Mes amis robots</h1>

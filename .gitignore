@@ -8,7 +8,8 @@
 # testing
 /coverage
 
-# production
+# productionBranch 'main' set up to track remote branch 'main' from 'origin'.
+Everything up-to-date
 /build
 
 # misc

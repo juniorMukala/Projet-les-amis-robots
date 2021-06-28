@@ -1,6 +1,91 @@
-* {
-    /* background-color: pink; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(-45deg,rgba(7,27,82,1),rgba(0,128,128,1));
+}
+h1{
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    color: white;
+    width: 20%;
+    height: 50px;
+    padding: 5px;
+    background: none;
+    border: 1px solid #0ccac4;
+    border-radius: 5px;
+}
+input:focus{
+    background: #0ccac454;
+}
+input::placeholder{
+    color: white;
+}
+.card{
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    padding: 5px;
+    background: #0ccac4;
+    transition: .5s;
+}
+.card:hover{
+   background-color: red;
+   border: 3px solid white;
+   box-shadow: black;
+   color : white;
+   transform: scale(1.08);
+   transition: all 0.4s;
+}
+
+@keyframes scale{
+    to{
+        transform: rotateY(0);
+    }
+    from{
+        transform:  rotatey(180deg);
+    }
+}
+  .loader::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    content: "";
+    border-right: 5px solid red;
+    border-radius: 50%;
+    animation-name: tourne;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
   }
+
+  @keyframes tourne{
+    to{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    from{
+         transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
   .container {
     display: flex;
     justify-content: center;
@@ -16,13 +101,11 @@
     margin-bottom: 30px;
     transition: all linear 0.2s;
   }
-  #Card--Photo{
+  .cardPhoto{
       justify-content: center;
   }
-  h1{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
+  .cardPrenom{
+      text-align: center;
   }
   .search {
     display: flex;

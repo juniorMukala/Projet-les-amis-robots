@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
 
-const Card = (props) => {
-  const {Click}=props;
-    return (
-        <>
-        <div className='card' onClick={Click}>
-        <div id="Card--Photo">
-            <img src={props.url} id="Url" alt="robot" />
-          </div>
-          <div id="Card--Prenom_Nom">{props.name}</div>
-          <div id="Card--Mail">{props.email}</div>
+const Card = ({ url, name, email, Click }) => {
+  return (
+    <>
+      <div className="card" onClick={Click}>
+        <div className="cardPhoto">
+          <img src={url} id="Url" alt="robot" />
         </div>
-      </>
+        <div className="cardPrenom">{name}</div>
+        <div className="cardMail">{email}</div>
+      </div>
+    </>
   );
 };
 

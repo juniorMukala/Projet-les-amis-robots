@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './Police/sega/SEGA.woff'
 import App from './App';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
